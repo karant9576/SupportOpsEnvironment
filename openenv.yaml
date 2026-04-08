@@ -1,0 +1,22 @@
+name: support-ops-env
+version: 1.0
+
+observation_space:
+  ticket_text: string
+  urgency_level: int
+  customer_tier: int
+  waiting_time: float
+  churn_risk: float
+  sla_deadline: float
+
+action_space:
+  assign_priority: int
+  response_type: int
+
+tasks:
+  - easy
+  - medium
+  - hard
+
+reward: continuous
+score_range: [0.0, 1.0]
